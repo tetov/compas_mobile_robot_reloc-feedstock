@@ -31,6 +31,13 @@ test:
     - compas_mobile_robot_reloc
     - compas_mobile_robot_reloc.utils
     - compas_mobile_robot_reloc.xforms
+  requires:
+    - pip
+    - pytest
+  commands:
+    - pip check
+    - pytest -vv {{ name }}
+
 
 about:
   home: https://gramaziokohler.github.io/compas_mobile_robot_reloc
